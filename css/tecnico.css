@@ -1,0 +1,405 @@
+*{
+    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo para la barra de Menú*/
+.nav-enlace{
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    padding: 10px, 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-enlace:hover{
+    color: lightgreen;
+    text-shadow: 1px 1px 2px black /*, 0 0 0.1em blue*/; 
+}
+
+nav{
+    background-color: lightgray;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 700px) {
+    nav{
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+} 
+
+
+
+/*Estilo para sección ppal*/
+.parte-principal{
+    display: flex;
+    background-image: url(img/cafe.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px;  
+    align-items: center;
+    box-shadow: 5px 5px 5px;
+   
+    
+
+}
+
+.subtitulo h4{
+    color: rgb(230, 95, 17);
+    width: 20px;
+}
+
+
+
+.capa{
+    position: absolute;
+    background-color: #666;
+
+}
+
+.parrafo{
+    z-index: 1;
+    width: auto;
+    height: 440px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: white;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+
+
+.parrafo img{
+    width: 400px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+ 
+.imagen-dos{
+    margin-right: 50px;
+    height: 100px;
+
+}
+
+ .parte-principal div{
+    padding: 40px;
+}   
+
+.parte-principal h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0,0,0,.5),0 0 0.1em blue ;
+    
+}
+
+.parte-principal p{
+    font-style: Arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: lightgreen;
+    text-shadow: 1px 2px 10px black, 0 0 0.1em blue;  
+    font-weight: bold;
+}
+
+.secundaria{
+    display: flex; 
+    height: 60dvh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(cafe-capuchinojpg.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Bebas Neue', cursive;;
+    font-weight: 800px;
+
+}
+
+.titulochico{
+    background-color: rgb(161, 96, 48);
+    font-family: fantasy;
+    font-style: inherit;
+    animation-delay: 5s;
+    text-align: center;
+}
+
+.secundaria h2{
+    text-transform: uppercase;
+    /* font-size: px; */
+    font-weight: bold;
+    color: black;
+    
+    
+}
+
+.secundaria h2:hover{
+    color: lightgreen;
+    text-shadow: 1px 1px 2px black, 0 0 0.5em blue;
+}
+
+.secundaria2{
+    display:flex;
+    padding: 40px;
+    justify-content: center;
+    background-color: white;
+    
+}/*contenedor del mapa*/
+.contenedor{
+    padding: 50px;
+    justify-content: space-between;
+    margin-left: auto;
+    text-decoration: wavy;
+    text-align: center;
+    font-size: large;
+    background:white;
+    width: auto;
+   
+    
+}
+
+.contenedor div{
+    padding: 30px;
+    justify-content: space-between;
+    margin-left: 50px;
+    background: rgb(115, 177, 216);
+
+}
+
+.contenedor p{
+    padding: 50px;
+    justify-content: space-between;
+    margin-left: auto;
+    text-decoration: wavy;
+    text-align: center;
+    font-size: medium;
+    background: rgb(115, 177, 216);
+    border: papayawhip;
+    width: auto;
+}
+
+.micontenedor {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #666;
+    font-weight: 500;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+@media (max-width: 700px) {
+    .contenedor{
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .imagen{
+        margin: 10px 0;
+    }
+}
+    .contenedor-form .form .titulo{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px; 
+} 
+.contenedor-form .form .parrafo{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px; 
+}
+.contenedor-form .form .control{
+        border: 3px solid blue;
+        display: flex;
+        height: 35px;
+        width: 300px;
+        margin-top:5px;
+        background-color: rgb(63, 68, 68);
+        color: #fefefe;
+}
+
+.contenedor-form .form .control::placeholder{
+        background: white;
+        color: black;
+
+}
+.contenedor-form .form .botons{
+        border: 3px solid red;
+        height: 35px;
+        width: 300px;
+        margin-top:5px;
+        background-color: black;
+        color: whitesmoke;
+}
+.contenedor-form .form .botons:hover{
+      background-color: red;
+}
+
+
+.contenedor div p{
+     text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #b3781f;
+	border: 1px solid #b3781f;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #9c5011;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+.pie-pagina{
+    width: 100%;
+    background: #0a141d;
+    margin: 10px;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding:45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+width: 250px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fefefe;
+    margin-bottom:10px;
+}
+
+.pie-pagina .grupo1 .red-social a{
+    
+    display:inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+.box .red-social a:hover{
+    color: rgb(94, 23, 7);
+}
+[Iconos]:placeholder-shown{
+    color:blue
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}

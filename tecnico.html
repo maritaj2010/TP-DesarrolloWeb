@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listado de Empresas de Soporte Técnico</title>
+    <link rel="stylesheet" href="css/tecnico.css">
+    <!-- <link rel="stylesheet" href="css/contacto.css"> -->
+    <link rel="stylesheet" href="css/footer.css">
+ 
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9381f96462.js" crossorigin="anonymous"></script>
+
+    <style>
+        .fila {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tecnico {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   	<header>
+          <nav>
+
+                 <a href="index.html" class="nav-enlace">Inicio</a>
+                 <a href="producto.html" class="nav-enlace">Productos</a>
+                 <a href="noticias.html" class="nav-enlace">Noticias</a>
+                 <a href="contacto.html" class="nav-enlace">Contacto</a>
+                 <a href="tecnico.html" class="nav-enlace">Servicio Técnico</a>
+
+         </nav>
+
+     </header>
+     <div class="contendor-noticias">
+      <h1 class="secundaria">
+        <p>Proveemos de servicio técnico a todo el país</p>
+      </h1>
+      <div class="title-cards">
+  		<h2>SERVICIO TÉCNICO</h2>
+	</div>
+
+
+
+    <div class="container-card">
+    	<div id="contenedorTecnicos" ></div>
+    </div>
+    <script>
+        // Obtener el JSON de la URL
+        fetch('https://mocki.io/v1/c411ca7f-8dd6-4844-a9d9-b02725848b26')
+            .then(response => response.json())
+            .then(data => {
+                // Obtener el contenedor
+                const contenedorTecnicos = document.getElementById('contenedorTecnicos');
+
+                // Recorrer los datos y generar divisiones para cada t�cnico
+                let fila = document.createElement('div');
+                fila.classList.add('fila');
+
+                data.empresas.forEach(tecnico => {
+                    const tecnicoDiv = document.createElement('div');
+                    tecnicoDiv.classList.add('contenido-card');
+                    tecnicoDiv.innerHTML = `
+                        <h3>${tecnico.nombre}</h3>
+                        <p><strong>Dirección:</strong> ${tecnico.direccion}</p>
+                        <p><strong>Teléfono:</strong> ${tecnico.telefono}</p>
+                        <p><strong>Móvil:</strong> ${tecnico.movil}</p>
+                        <p><strong>Email:</strong> ${tecnico.email}</p>
+                    `;
+
+				    const card = document.createElement('div');
+				    card.classList.add('card');
+				    card.appendChild(tecnicoDiv);
+
+                    fila.appendChild(card);
+
+
+                    if (fila.childNodes.length === 3) {
+                        contenedorTecnicos.appendChild(fila);
+                        fila = document.createElement('div');
+                        fila.classList.add('fila');
+                    }
+                });
+
+
+                if (fila.childNodes.length > 0) {
+                    contenedorTecnicos.appendChild(fila);
+                }
+            })
+            .catch(error => {
+                console.log('Error al obtener los datos:', error);
+            });
+    </script>
+
+
+
+
+<!-- Sección del footer -->
+
+<footer class="pie-pagina"> 
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href =#></a>
+                <img src="img-footer/pie.png" alt="logo de slee">
+            </figure >
+        </div>
+    </div>
+    <div class="grupo-1"> 
+        <div class="box">
+            <h2>Contactanos</h2>
+            <p>info@cafemachine.com.ar</p>
+            <p>TEL: 15-6652-2865</p>
+            <p>Whatsapp: +54 9 11 6652-2865</p>
+            <p>pringles 173, B1825DWG Lanús Este,</p>
+            <p>Provincia de Buenos Aires, Argentina</p>
+        </div>
+    </div>
+    <div class="grupo-1"> 
+        <div class="box">
+            <h2>Seguinos</h2>
+            <div CLASS="red-social"></div>
+            <a href="#" id="Iconos" class="fa fa-facebook"></a>
+            <a href="#" id="Iconos"class="fa fa-instagram"></a>
+            <a href="#" id="Iconos"class="fa fa-twitter"></a>
+            <a href="#" id="Iconos"class="fa fa-youtube"></a>
+        </div>
+    </div>
+   
+</footer>
+
+</body>
+</html>

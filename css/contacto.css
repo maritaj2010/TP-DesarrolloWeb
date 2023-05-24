@@ -1,0 +1,212 @@
+
+    
+*{
+    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#31e682 0.5px, transparent 0.5px), radial-gradient(#31e682 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+/*Estilo para la barra de Menú*/
+.nav-enlace{
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    padding: 10px, 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-enlace:hover{
+    color: lightgreen;
+    text-shadow: 1px 1px 2px black /*, 0 0 0.1em blue*/; 
+}
+
+nav{
+    background-color: lightgray;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 700px) {
+    nav{
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+} 
+
+/*Foto grande*/
+
+.foto-cafetera{
+    margin: 10px;
+    display: flex;
+    background-image: url(../img-contacto/maquinas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;  
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 5px 5px 5px; 
+}
+
+.foto-cafetera h1{
+    font-style: Arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.foto-cafetera h1:hover{
+    color: lightgreen;
+    text-shadow: 1px 1px 2px white , 0 0 0.1em blue; 
+
+}
+
+
+
+
+/*formulario de contacto*/
+   
+.contenedor-form{
+   
+   background-color: #fff;
+   margin: auto;
+   width: 90%;
+   max-width: 400px;
+   padding: 4.5em 3em;
+   border-radius: 10px;
+   box-shadow:  0 5px 10px -5px rgb(0 0 0 / 30%);
+
+}
+
+.contenedor-form .h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.contenedor-form .p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .container .control{        
+    font-size: 20px;
+    margin:20px;
+    border-bottom:7px;
+    background-color:rgb(245, 244, 244);
+    border: 0px;
+    border-bottom: 2px solid gray;
+    /* margin-right: 100vh; */
+    color:rgb(0, 0, 0)
+
+}
+ 
+
+.container .control:hover{
+    background-color: lightgray;
+      
+ }
+
+
+.container .botons{
+    margin-right: 400px;
+    border:0px;
+    width: 20vh;
+    height: 6vh;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container .botons:hover{
+
+    background-color: black;
+    color: white;
+    text-align:20px;
+    text-shadow: 5px 3px 3px;
+    
+}
+
+     
+
+/*contenedor del mapa*/
+.contenido{
+    display:flex; 
+    justify-content: center;
+    padding: 80px;  
+    background-color: lightgray;
+    margin: 5px; 
+                
+}
+
+.contenido div h1{
+    font-weight: bold;
+
+}
+
+.contenido div p{
+    font-size: 18px;
+    font-style: normal;
+    color:cadetblue;
+    font-weight: bold;
+}
+
+.contenido iframe{
+
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+} 
+
+
+/*responsive*/
+
+@media (max-width: 700px) {
+    .contenedor{
+        flex-direction: column;
+        min-width: 300px;
+    }
+}
+    .imagen{
+        margin: 10px 0;
+    }
+    
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+

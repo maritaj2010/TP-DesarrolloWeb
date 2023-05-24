@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Institucional de productos cafeteros</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <!---Iconos-->
+    <script src="https://kit.fontawesome.com/9381f96462.js" crossorigin="anonymous"></script>
+	 <script src="js/contacto.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+               <a href="index.html" class="nav-enlace">Inicio</a>
+               <a href="producto.html" class="nav-enlace">Productos</a>
+               <a href="noticias.html" class="nav-enlace">Noticias</a>
+               <a href="contacto.html" class="nav-enlace">Contacto</a>
+               <a href="tecnico.html" class="nav-enlace">Servicio Técnico</a>
+       </nav>
+   </header>
+
+    <div class="foto-cafetera">
+        <div>
+            <h1>Contacto</h1>
+        </div>
+   </div>
+
+
+    <div class="contenedor-form">
+
+
+      <h2 class ="h2">Contactanos</h2>
+      <p class="p">¡Nos encantaria saber de vos!</p>
+      <div class="container" >
+
+            <form name="fvalida"  action="https://formspree.io/f/myyaazba"   method="POST" >
+			             <input type="text" name="nombre" id="nombre" maxlenght="30" placeholder="Nombre" class="control"><br />
+			             <input type="text" name="apellido" id="apellido" maxlenght="20" placeholder="Apellido"class="control"><br />
+			 			 <input type="text" name="edad" size="3" maxlength="2" placeholder="Edad" class="control"><br />
+                         <input type="email" name ="correo" id="correo" placeholder="Mail" class="control"><br />
+
+
+			               <select name="interes" class="control">
+			 				  <option value="Elegir">Elegir motivo contacto.
+			 				  <option value="Comercial">Contacto comercial.
+			 				  <option value="Clientes">Atención al cliente.
+			 				  <option value="Proveedores">Contacto de proveedores.
+			 				</select>
+			 				<br />
+						<div class="control">
+			               Region: <br /><br />
+			               Capital Federal: <input type="radio" name="region" id="caba" value="caba" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			               Bs.As. G.B.A: <input type="radio" name="region" id="gran" value="gran" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			         	  	Resto Pais: <input type="radio" name="region" id="resto" value="interior"   >
+						</div>
+			 			<br />
+			 			 <div class="control"> Escribinos: </div> <br />
+			 			 <textarea  rows="10" cols="25"  name ="texto" id="texto" class="control"></textarea><br />
+
+ 						<input type="button" value="Enviar" onclick="valida_envia()" class="botons"> <br />
+           </form>
+      </div>
+
+     <br />
+
+    </div>
+
+<div class="contenido">
+        <div>
+        <h1>Vías de contacto</h1>
+        <br>
+        <p>Contactános por alguno de los medios que tenemos <br> a disposición.</p>
+        <p>La mejor atención siempre.</p>
+        </div>
+
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13121.11016924853!2d-58.40010297710593!3d-34.69817902675439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccdf3faef40b%3A0xe777712b82aff945!2sCnel.%20Pringles%20173%2C%20B1824IKM%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682372758794!5m2!1ses!2sar" style="border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+
+<!--Fin   Tarjetas-->
+
+
+<!-- Sección del footer -->
+
+<footer class="pie-pagina"> 
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href =#></a>
+                <img src="img-footer/pie.png" alt="logo de slee">
+            </figure >
+        </div>
+    </div>
+    <div class="grupo-1"> 
+        <div class="box">
+            <h2>Contactanos</h2>
+            <p>info@cafemachine.com.ar</p>
+            <p>TEL: 15-6652-2865</p>
+            <p>Whatsapp: +54 9 11 6652-2865</p>
+            <p>pringles 173, B1825DWG Lanús Este,</p>
+            <p>Provincia de Buenos Aires, Argentina</p>
+        </div>
+    </div>
+    <div class="grupo-1"> 
+        <div class="box">
+            <h2>Seguinos</h2>
+            <div CLASS="red-social"></div>
+            <a href="#" id="Iconos" class="fa fa-facebook"></a>
+            <a href="#" id="Iconos"class="fa fa-instagram"></a>
+            <a href="#" id="Iconos"class="fa fa-twitter"></a>
+            <a href="#" id="Iconos"class="fa fa-youtube"></a>
+        </div>
+    </div>
+   
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

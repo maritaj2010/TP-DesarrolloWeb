@@ -1,0 +1,88 @@
+
+@media (min-width: 640px) and (max-width: 1280px) {
+	.pie-pagina{
+        flex-direction: column;
+	}
+	.grupo-1{
+		margin: 15px;
+	}
+}
+
+
+@media (max-width: 640px) {
+
+    .pie-pagina{
+        flex-direction: column;
+        min-width: 300px; 
+    }
+    .grupo-1{
+        margin: 10px 0;
+    }
+    
+    
+} 
+
+
+.pie-pagina{
+    
+    width: 100%;
+    background: grey;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding:45px 0px;
+   
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fefefe;
+    margin-bottom:10px;
+}
+
+
+.pie-pagina .grupo1 .red-social a{
+    
+    display:inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px; 
+    
+}
+ .box .red-social a:hover{
+    color: rgb(94, 23, 7);
+}
+[Iconos]:placeholder-shown{
+    color: blue;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
