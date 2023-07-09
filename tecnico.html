@@ -55,7 +55,8 @@
     </div>
     <script>
         // Obtener el JSON de la URL
-        fetch('https://mocki.io/v1/c411ca7f-8dd6-4844-a9d9-b02725848b26')
+        //fetch('https://mocki.io/v1/c411ca7f-8dd6-4844-a9d9-b02725848b26')
+        fetch('https://trevize.pythonanywhere.com/serviciostecnicos')
             .then(response => response.json())
             .then(data => {
                 // Obtener el contenedor
@@ -65,7 +66,7 @@
                 let fila = document.createElement('div');
                 fila.classList.add('fila');
 
-                data.empresas.forEach(tecnico => {
+                data.forEach(tecnico => {
                     const tecnicoDiv = document.createElement('div');
                     tecnicoDiv.classList.add('contenido-card');
                     tecnicoDiv.innerHTML = `
